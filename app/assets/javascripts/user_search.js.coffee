@@ -34,10 +34,10 @@ $(document).ready ->
     select: (event, ui) ->
       data =
         'portal' : $('#portal').val()
-        'email' : "#{ui.item.email}"
+        'term' : "#{ui.item.email}"
       $.ajax
-        url: "/user/search"
-        type: 'GET'
+        url: "/identities/find_or_create"
+        type: 'POST'
         data: data
       $('#user_search_term').clearFields()
       $('.add-user-details').show()
