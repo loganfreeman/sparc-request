@@ -1124,7 +1124,7 @@ en:
   login_password: "Password:"
   remember_user: "Remember me:"
   signin:
-    button1: "Users Click Here"
+    button1: "MUSC Users Click Here"
     button2: "Outside Users Click Here"
     button3: "Sign In"
     message1: "Users- Sign in here"

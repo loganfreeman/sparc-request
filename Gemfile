@@ -61,6 +61,7 @@ gem 'seed-fu', '~> 2.3'
 gem 'smarter_csv'
 gem "non-stupid-digest-assets"
 
+
 group :development, :test, :profile do
   gem 'addressable', '~> 2.3.6'
   gem 'bullet'

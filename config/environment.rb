@@ -71,7 +71,7 @@ CREATE_AN_ACCOUNT                         = APP_CONFIG['create_an_account']
 ABOUT_SPARC_URL                           = APP_CONFIG['about_sparc_url'] || nil
 USE_CAS_ONLY                              = APP_CONFIG['use_cas_only']
 USE_CAS                                   = APP_CONFIG['use_cas']
-INSTITUTION_NAME                          = APP_CONFIG['institution_name'] || "University"
+INSTITUTION_NAME                          = APP_CONFIG['institution_name']
 
 APP_CONSTANT ||= YAML::load_file(File.join(Rails.root, 'config', 'constants'+CONSTANTS_YML_OVERRIDE+'.yml'))
 

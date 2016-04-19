@@ -337,4 +337,12 @@ module ApplicationHelper
       return ""
     end
   end
+
+  def signin_btn_text
+    if INSTITUTION_NAME.blank?
+      t(:signin)[:button1]
+    else
+      "#{INSTITUTION_NAME} Users Click Here"
+    end
+  end
 end
