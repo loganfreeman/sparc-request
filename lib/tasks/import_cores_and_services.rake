@@ -13,7 +13,7 @@ namespace :data do
   desc "Import institutions and services from CSV"
   task :import_institution_and_service, [:ldap_uid, :dry_run] => :environment do |t, args|
 
-    dry_run = args[:dry_run].strip
+    dry_run = args[:dry_run] && args[:dry_run].strip
     is_dry_run = dry_run && (dry_run.downcase == 'yes' || dry_run.downcase == 'y')
 
     path = Rails.root.join('doc', 'institution.csv')
