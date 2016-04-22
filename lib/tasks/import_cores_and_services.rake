@@ -11,7 +11,7 @@ end
 
 namespace :data do
   desc "Import institutions and services from CSV"
-  task :import_institution_and_service, [:dry_run, :ldap_uid] => :environment do |t, args|
+  task :import_institution_and_service, [:ldap_uid, :dry_run] => :environment do |t, args|
     def is_dry_run
       dry_run = args[:dry_run].strip
       dry_run && (dry_run.downcase == 'yes' || dry_run.downcase == 'y')
