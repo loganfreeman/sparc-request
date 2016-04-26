@@ -55,6 +55,8 @@ gem 'will_paginate'
 gem 'omniauth-cas'
 gem 'colorize'
 
+gem 'rubyzip'
+
 gem 'railroady'
 gem 'seed_dump'
 gem 'seed-fu', '~> 2.3'
