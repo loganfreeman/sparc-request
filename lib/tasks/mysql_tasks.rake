@@ -55,7 +55,7 @@ namespace :mysql do
   def connection_options(config)
     options = ''
     options << " -u #{config['username']}" if config['username']
-    options << " -p#{config['password']}"  if config['password']
+    options << " -p'#{config['password']}'"  if config['password']
     options << " -h #{config['host']}"     if config['host']
     options << " -P #{config['port']}"     if config['port']
     options << " #{config['database']}"    if config['database']
