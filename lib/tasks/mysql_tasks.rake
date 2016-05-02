@@ -33,6 +33,7 @@ namespace :mysql do
   task :load_from_production_dump do
     require_environment('development')
     puts 'Loading from production dump'
+    puts "#{sh_mysql(database_config)} < tmp/production_data.sql"
     `#{sh_mysql(database_config)} < tmp/production_data.sql`
     puts 'Loaded from production dump'
   end
